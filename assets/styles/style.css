@@ -14,7 +14,6 @@ body {
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
-	text-align: center;
 }
 .directions h2{
 	display: none;
@@ -103,12 +102,10 @@ body {
 }
 
 .The__Design img{
-	margin: auto;
-	margin-top: 110px;
+	margin: 110px auto 0;
 }
 .The__Design__title-two{
 	max-width: 770px;
-	height: 64px;
 	font-size: 16px;
 	color: #ffffff;
 	font-weight: 300;
@@ -118,6 +115,11 @@ body {
 .free__screen__content {
 	margin: auto;
 	text-align: center;
+}
+.form__screen__content{
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
 }
 .first-screen__content{
 	margin: auto;
@@ -182,6 +184,7 @@ body {
 	color: #3f4244;
 	font-weight: 400;
 	font-family: "Roboto";
+	margin: 0;
 }
 .Mobile__Fully__title-two{
 	max-width: 571px;
@@ -215,16 +218,16 @@ body {
 	justify-content: center;
 	min-width: 1300px;
 	background-image: linear-gradient(164deg, #6dffc6 1%, #3fd2ce 99%);
+	text-align: center;
 }
 .free__screen__title-two{
-	width: 770px;
-	height: 64px;
+	max-width: 770px;
 	font-size: 13px;
 	color: #ffffff;
 	font-weight: 300;
 	font-family: "Roboto";
 	text-align: center;
-	padding-bottom: 150px;
+	padding-bottom: 100px;
 	margin: auto;
 }
 .nav__web li{
@@ -259,7 +262,7 @@ body {
 .free__screen__item_two{
  margin: 0 auto;
  max-width: 214px;
- height: 61px;
+ min-height: 61px;
  font-size: 13px;
  color: #929ba0;
  font-weight: 400;
@@ -290,6 +293,7 @@ body {
 	color: #ffffff;
 	font-weight: 400;
 	font-family: "Roboto";
+	padding: 30px 0px;
 }
 .stats__screen__item{
 	margin: 15px 0;
@@ -299,4 +303,58 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	padding-top: 50px;
+}
+.form__screen{
+    background-image: linear-gradient(180deg, #ff6c54 1%, #ff2b59 99%);
+    min-height: 720px;
+}
+.form__screen__control{
+	display: flex;
+    position: relative;
+	justify-content: space-between;
+}
+.form__content__in{
+	max-width: 900px;
+	margin: 0 auto;
+}
+.form--group{
+	max-width: 510px;
+	width: 100%;
+	padding: 0 20px;
+}
+input {
+	color: #fff;
+	background: none;
+	display: inline-block;
+	border:  3px solid #fff;
+	width: 100%;
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 60px;
+	transition: .6s;
+}
+input::placeholder{
+	color: #fff;
+}
+input:focus-visible{
+	outline: none;
+	border:  3px solid #10cab7;
+	border-radius: 20px;
+}
+
+.form--last{
+	max-width: 100%;
+	width: 100%;
+	padding: 70px 20px 0px 20px;
+}
+.button__form{
+	background-color: #233537;
+    width: 200px;
+	color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 55px;
+	margin-top: 30px;
+	cursor: pointer;
+	float: right;
 }
